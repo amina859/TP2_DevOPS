@@ -1,0 +1,121 @@
+                        ### Indexation sur les strings(chaines de caractères)
+#### Variable string
+chaine = "How are you guys?"
+#### Calculer la longueur du string
+len(chaine)
+
+##### Afficher un premier caractère 
+print(chaine[0]) #(avec l'indexation positive)
+print(chaine[-len(chaine)]) #(avec l'indexation negative)
+
+
+##### Afficher un dernier caractère 
+print(chaine[-1]) #(avec l'indexation negative)
+print(chaine[len(chaine)-1]) ##(avec l'indexation positive)
+
+##### Afficher l'avant dernier caractère 
+print(chaine[-2]) #Indexation négative
+print(chaine[len(chaine)-2]) #Indexation positive
+
+##### Afficher les deux premiers caractères 
+print(chaine[0], chaine[1]) #(avec l'indexation positive)
+print(chaine[-len(chaine)], chaine[-len(chaine)+1]) ##(avec l'indexation negative)
+
+
+##### Afficher les caractÃ¨res d'index 3 au premier caractère 
+print(chaine[0:4]) #(avec l'indexation positive)
+print(chaine[:4]) #(avec l'indexation positive)
+
+print(chaine[-17:-13]) #(avec l'indexation negative)
+print(chaine[-len(chaine):-len(chaine) + 4]) #(avec l'indexation negative)
+print(chaine[:-len(chaine) + 4]) #(avec l'indexation negative)
+
+
+##### Afficher les caractÃ¨res d'index 2 au dernier caractÃ¨re 
+print(chaine[2: len(chaine)]) #(avec l'indexation positive)
+
+print(chaine[-15:]) #(avec l'indexation negative) ON NE MET PAS -1 SI ON VEUT ARRIVER AU DERNIER ELEMENT
+print(chaine[-len(chaine) +2 :len(chaine)]) #(avec l'indexation negative)
+
+##### Afficher les deux derniers caractÃ¨res  INCOMPRIS 
+print(chaine[15:17]) #Indexation positive
+print(chaine[len(chaine)-2:len(chaine)]) #Indexation positive
+
+print(chaine[-2:]) #Indexation negative
+print(chaine[-len(chaine)+len(chaine)-2:])  #(avec l'indexation negative) propriete de l'addition, revient a faire exactement la meme chose qu'en haut 
+
+##### Afficher les caractÃ¨res d'index -3 au dernier caractÃ¨re (avec l'indexation nÃ©gative)
+
+
+##### Afficher les caractÃ¨res d'index -5 Ã  l'index -2 (avec l'indexation nÃ©gative)
+
+
+##### Afficher les caractÃ¨res avec un pas de 2
+print(chaine[0:17:2])
+print(chaine[0: :2])
+
+
+                       ### ImmutabilitÃ© des strings 
+
+##### Remplacer un premier caractere d'un string par un autre
+chaine[0]= " "
+chaine[0]= "A"
+ 
+
+                        ### Manipuler des chaines de caracteres avec des methodes
+chaine1 = "BONJOUR MONSIEUR"
+
+# fonction .lower()
+print(chaine1.lower())
+chaine1= chaine1.lower()
+
+# fonction .upper()
+chaine1= chaine1.upper()
+print(chaine1)
+
+# fonction .capitalize()
+chaine1= chaine1.capitalize()
+print(chaine1)
+
+# fonctions .rstrip() .lstrip() .strip() 
+chaine2 = "    Bonjour monsieur     "
+
+# fonction .lstrip()
+print(chaine2.lstrip())
+
+# Fonction .rstrip()
+print(chaine2.rstrip())
+
+# Fonction .strip  supprimes les espaces en debut et fin
+print(chaine2.strip())
+chaine2= chaine2.strip()
+print(chaine2)
+
+# Supprimer un autre caractere
+chaine3 = "____Bonjour monsieur_____"
+chaine3 = chaine3.strip("_")
+
+
+# fonction .replace()
+chaine4 = chaine3.replace("_", "")
+print(chaine4)
+
+chaine5="@hello guys"
+chaine5 = chaine5.replace("guys", "world")
+chaine5 = chaine5.replace("@", "")
+print(chaine5)
+
+
+                        ### Interagir avec les inputs de l'utilisateur
+
+# fonction input()
+
+
+# Demander Ã  l'utilisateur d'entrer son nom et retourner ensuite par exemple : 'Bonjour Abdoul!'
+
+
+# Demander Ã  l'utilisateur d'entrer son nom et son age et retourner ensuite 'Abdoul a 29 ans'
+
+
+
+
